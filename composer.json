@@ -1,0 +1,13 @@
+{
+    "name": "karina.meier/usuarios",
+    "type": "projeto",
+    "require": {
+        "slim/slim": "^4.14",
+        "slim/psr7": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "KarinaMeier\\Usuarios\\": "src/"
+        }
+    }
+}
