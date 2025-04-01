@@ -37,7 +37,7 @@ $app->post('/usuario', function (Request $request, Response $response, array $ar
     $data = (array) $request->getParsedBody();
     if (!isset($data['login']) || !isset($data['senha'])) {
         $response->getBody()->write(json_encode(["mensagem" => "Login e senha são obrigatórios"]));
-        return $response->withHeader('Content-Type', 'application/json')->withStatus(400);
+        return $response->withHeader('Content-Type', 'application/json')->withStatus(200);
     }
     return $response->withStatus(201);
 });
